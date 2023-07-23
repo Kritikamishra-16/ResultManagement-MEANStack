@@ -1,0 +1,21 @@
+<div class="container m-3">
+    <div class="row">
+        <h2>{{data.name}}'s Result</h2>
+    </div>
+</div>
+<div class=" m-5 result">
+    <div class="row mb-3">
+        <div><strong>Roll Number</strong><span class="tab"></span>:: {{data.roll_number}}</div>
+    </div>
+    <div class="row mb-3">
+        <div><strong>Name</strong><span class="tab2"></span>:: {{data.name}}</div>
+    </div>
+    <div class="row mb-3">
+        <div><strong>Date of Birth</strong><span class="tab3"></span>:: {{data.dob}}</div>
+    </div>
+    <div class="row mb-3">
+        <div><strong>Score</strong><span class="tab4"></span>::{{data.score}}</div>
+    </div>
+    <button class="btn btn-primary" (click)="goBack()">Back</button>
+</div>
+

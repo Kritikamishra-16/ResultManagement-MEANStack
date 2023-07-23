@@ -1,0 +1,40 @@
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Add Student</h2>
+    </div>
+    <div class="row">
+        <form [formGroup]="addStudentForm" >
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" placeholder="Enter rollnumber" id="floatingRollNo" formControlName="roll_number">
+                <label for="floatingRollNo">Roll No:</label>
+                <div *ngIf="addStudentForm.get('roll_number')?.invalid && (addStudentForm.get('roll_number')?.dirty || addStudentForm.get('roll_number')?.touched)" class="text-danger">
+                    This is required field
+                </div>
+            </div>    
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" placeholder="Enter name" id="floatingName" formControlName="name">
+                <label for="floatingName">Name:</label>
+                <div *ngIf="addStudentForm.get('name')?.invalid && (addStudentForm.get('name')?.dirty || addStudentForm.get('name')?.touched)" class="text-danger">
+                    This is required field
+                </div>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="date" class="form-control" placeholder="Enter DOB" id="floatingDob" formControlName="dob">
+                <label for="floatingDob">Date Of Birth</label>
+                <div *ngIf="addStudentForm.get('dob')?.invalid && (addStudentForm.get('dob')?.dirty || addStudentForm.get('dob')?.touched)" class="text-danger">
+                    This is required field
+                </div>
+            </div>    
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" placeholder="Enter score" id="floatingScore" formControlName="score">
+                <label for="floatingScore">Score</label>
+                <div *ngIf="addStudentForm.get('score')?.invalid && (addStudentForm.get('score')?.dirty || addStudentForm.get('score')?.touched)" class="text-danger">
+                    This is required field
+                </div>
+            </div>   
+            <button type="submit" class="btn btn-primary m-2" (click)="addStudent()" [disabled]="addStudentForm.invalid">Submit</button> 
+            <button class="btn btn-danger" (click)="reset()">Clear</button> 
+        </form>
+    </div>
+</div>

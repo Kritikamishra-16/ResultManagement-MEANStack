@@ -1,0 +1,9 @@
+.result{
+    padding: 20px;
+    height: 30%;
+    width: 60%;
+    border-width: 5px;
+  border-color: #000;
+  border-style: solid;
+  background-color: #f0f0f0;
+}

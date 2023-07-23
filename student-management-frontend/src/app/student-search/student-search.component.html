@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Result Management System</a>
+    </div>
+  </nav>
+<button [routerLink]="['']" class="btn btn-secondary m-4">Back</button>
+
+<div class="container mt-5">
+    <h1>Find Result</h1>
+    <form [formGroup]="searchStudentForm" (ngSubmit)="studentSearch()">
+        <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label" for="rollNumber">Roll Number</label>
+            <div class="col-sm-7">
+                <input class="form-control" type="number" name="rollNumber" formControlName="strollNumber">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label" for="name">Name</label>
+            <div class="col-sm-7">
+                <input class="form-control" type="text" name="studentName" formControlName="stname">
+            </div>
+        </div>
+        <button class="btn btn-info me-4">Submit</button>
+        <button class="btn btn-danger" type="reset">Clear</button>
+    </form>
+</div>

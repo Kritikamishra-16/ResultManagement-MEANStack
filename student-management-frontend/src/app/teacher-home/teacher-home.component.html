@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Result Management System</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="teacher-home/list-student">List Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="teacher-home/add-student">Add Student</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="signout()" style="cursor: pointer;" >Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="container mt-5">
+    <router-outlet></router-outlet>
+</div>  

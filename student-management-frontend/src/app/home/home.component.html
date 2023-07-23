@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Result Management System</a>
+    </div>
+  </nav>   
+   
+   <div class="container mt-5" >
+        <div class="row">
+            <div class="text-center" style="font-size: 25px;">
+                Login As
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 text-center">
+        <div class="row justify-content-around">
+            <div class="col-4">
+                <button [routerLink]="['teacher-login']" class="btn btn-primary btn-lg">Teacher</button>
+            </div>
+            <div class="col-4">
+                <button [routerLink]="['student-search']" class="btn btn-primary btn-lg">Student</button>
+            </div>
+        </div>
+    </div>

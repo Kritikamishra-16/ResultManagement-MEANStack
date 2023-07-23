@@ -1,0 +1,30 @@
+<div class="container-fluid m-0 p-0 bg-success" style="height: 100vh; overflow: hidden !important;">
+    <div class="row my-5">
+        <div class="col"></div>
+        <div class="col-md-3 my-5 me-5" style="height: 400px;">
+            <div class="card shadow p-4" style="height: 400px !important">
+                
+                <form [formGroup]="teacherLoginData" (ngSubmit)="teacherLoginFun()">
+                    <h4 class="text-success">Teacher Login</h4>
+                    <div class="mb-3">
+                        <label for="inputEmail1" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="inputEmail1" formControlName="username">
+                        <div *ngIf="teacherLoginData.get('username')?.invalid && (teacherLoginData.get('username')?.dirty || teacherLoginData.get('username')?.touched)" class="text-danger">
+                            This is required field
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword1" formControlName="password">
+                        <div *ngIf="teacherLoginData.get('password')?.invalid && (teacherLoginData.get('password')?.dirty || teacherLoginData.get('password')?.touched)" class="text-danger">
+                            This is required field
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-success me-2 ms-auto" [disabled]="teacherLoginData.invalid">Login</button>
+                </form>
+                <button [routerLink]="['']" class="btn btn-outline-success m-5">Back</button>
+
+            </div>
+        </div>
+    </div>
+</div>
