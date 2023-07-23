@@ -18,6 +18,8 @@ The Result Management Application is a web-based system developed using Angular 
   - Edit existing student records.
   - Delete student records.
 
+## Screenshots    
+
 <img width="960" alt="Screenshot 2023-07-19 131450" src="https://github.com/Kritikamishra-16/ResultManagement-MEANStack/assets/67709501/851b91bc-8a1a-49b4-a8e4-94ef095d9c47">
 
 <img width="960" alt="Screenshot 2023-07-19 131641" src="https://github.com/Kritikamishra-16/ResultManagement-MEANStack/assets/67709501/27e9b2b9-d7c9-4291-95d8-0ca294057d14">
@@ -48,14 +50,7 @@ The Result Management Application is a web-based system developed using Angular 
 2. Once logged in, students can enter their roll number and date of birth to view their result. If there's a mismatch, an error message will be displayed.
 3. Teachers can access the dashboard to view all student records, add new records, edit existing records, and delete student records as needed.
 
-## Screenshots
-
-(Add attractive screenshots of the application to showcase its user interface.)
 
 ## Contributing
 We welcome contributions to enhance the application. To contribute, please fork this repository, create a feature branch, and submit a pull request with your changes.
 
-## License
-[Insert License Information Here]
-
-(Note: Replace "[Insert License Information Here]" with the actual license information for the project.)
